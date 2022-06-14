@@ -1,0 +1,46 @@
+body{
+    background-color: brown;
+    margin: 200px 0px;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-weight: 50;
+
+}
+.principal{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+   justify-content: center;
+   margin: auto auto;
+   
+}
+.box{
+    width: 20%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    margin: 10px;
+    border-radius: 10%;
+}
+.box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+.box img:hover{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transform: scale(1.1);
+    border-radius: 10%;
+    border:1px solid violet;
+}
+#dias{
+    font-style: italic;
+    font-size: larger;
+}
