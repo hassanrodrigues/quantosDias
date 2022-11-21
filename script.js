@@ -10,6 +10,12 @@ let body = document.querySelector('body')
 let valor = document.querySelector('#dias')
 
 valor.innerText =  `${diffDays} dias ${date2.getHours()}h:${date2.getMinutes()}m:${date2.getSeconds()}s:${date2.getMilliseconds()}ms `
+//time real time
+setInterval(() => {
+      let date2 = new Date(Date.now())
+      valor.innerText =  `${diffDays} dias ${date2.getHours()}h:${date2.getMinutes()}m:${date2.getSeconds()}s `
+}, 1000);
+
 
 addEventListener('click',function(ev){
    let img =ev.target.tagName
